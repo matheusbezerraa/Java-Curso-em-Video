@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package aula02;
 
 /**
@@ -18,9 +14,9 @@ public class Caneta {
     
     void status(){
         System.out.println("modelo: "+ this.modelo);
-        System.out.println("uma caneta "+ this.cor);
+        System.out.println("cor da caneta: "+ this.cor);
         System.out.println("ponta: "+ this.ponta);
-        System.out.println("carga: " + this.carga);
+        System.out.println("carga: " + this.carga + "%");
         System.out.println("está tampada? "+ this.tampada);
         
     }
@@ -32,9 +28,11 @@ public class Caneta {
             System.out.println("estou rabiscando");
         }
     }
+
     void tampar(){
         this.tampada = true;
     }
+
     void destampar(){
         this.tampada = false;
     }
